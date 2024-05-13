@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+header, footer, main {
+    padding: 20px;
+}
+
+header {
+    
+    background-color: #43eab8;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Estilos específicos */
+#blog {
+    flex: 2;
+}
+
+#ads, #support, #comments {
+    flex: 1;
+    background-color: #43eab8;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#comments {
+    position: relative;
+}
+
+#comment-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.elemento {
+    transition: transform 0.3s ease-in-out;
+}
+
+.elemento:hover {
+    transform: scale(1.1);
+}
+
+
+.encabezado-img{
+    background-image: url(img/tasumal.jpg),url(img/alcaldia.jpg),url(img/teatro.jpg),url(img/santa-an\ catedra-12.jpg),url(img/iglesia\ .jpg),url(img/catedral.jpg),url(img/volcan.jpg); 
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: #ffffff;
+}
+
+.encabezado-img p{
+    font-size: 30px;
+}
+
+.encabezado-img h1{
+    font-size: 70px;
+    padding: 20px 0;
+}
+
+hr {
+    margin-top: 50px; /* Espacio superior */
+    margin-bottom: 40px; /* Espacio inferior */
+    border: none; /* Elimina el borde predeterminado de la línea */
+    border-top: 1px solid #ccc; /* Establece un borde superior personalizado */
+}
+
+.SeccióndeNoticias-img{
+    background-image:url(img/anuncio.jpg);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-position: center;
+
+}
+
+.footer {
+    background-color: #924848;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px; /* Ancho del botón */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+.navbar {
+    background-color: #333; /* Color de fondo */
+    padding: 10px 20px; /* Espaciado interno */
+}
+
+.navbar-brand img {
+    max-width: 100%; /* Para que la imagen no se salga del contenedor */
+}
+
+.navbar-toggler {
+    border: none; /* Quita el borde del botón */
+    background-color: transparent; /* Quita el fondo del botón */
+    color: #fff; /* Color del icono */
+}
+
+/* Header */
+.encabezado-img {
+    background-image: url(https://santaana.gob.sv/media/noticias/DSC00006.jpg); /* Imagen de fondo */
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Color del texto */
+    text-align: center;
+}
+
+.encabezado-img p, .encabezado-img h1 {
+    margin: 10px 0; /* Espaciado interno */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.card-img-top {
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Hace que la altura se ajuste automáticamente para mantener la proporción */
+}
+
+.ad img {
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Hace que la altura se ajuste automáticamente para mantener la proporción */
+}
+
+.navbar-brand{
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+figure {
+    margin-bottom: 40px; /* Agrega espacio en la parte inferior */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+figure iframe {
+    max-width: 100%; /* Asegura que el ancho máximo del iframe sea del 100% */
+    height: auto; /* Hace que la altura se ajuste automáticamente para mantener la proporción */
+    margin: 10px; /* Agrega un margen alrededor de cada iframe */
+}
