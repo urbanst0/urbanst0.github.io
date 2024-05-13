@@ -1,0 +1,177 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+/* Estilos para encabezado */
+header {
+  background-color: #fafafa;
+  color: #ffffff;
+  padding: 20px;
+}
+
+/* Estilos para navegación */
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+/* Estilos para el contenido principal */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Estilos para secciones */
+section {
+  margin-bottom: 50px;
+}
+
+/* Estilos para áreas específicas */
+#ads, #support, #comments {
+  flex: 1;
+  background-color: #88cfbab6;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#comments {
+  position: relative;
+}
+
+#comment-list {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#comment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"], textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Estilos para elementos interactivos */
+.elemento {
+  transition: transform 0.3s ease-in-out;
+}
+
+.elemento:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para el encabezado con imagen de fondo */
+.encabezado-img {
+  background-image: url(image/mapa-turistico-de-el-salvador.webp); 
+  height: 130vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30;
+  color: #070233;
+}
+
+.encabezado-img p {
+  font-size: 30px;
+}
+
+.encabezado-img h1 {
+  font-size: 70px;
+  padding: 20px 0;
+}
+
+/* Estilos para botones */
+.btn {
+  padding: 20px 30px;
+  font-size: 16px;
+  background-color: #d30b0b;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* Estilos para el pie de página */
+.footer {
+  background-color: #5583b1;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Estilos para el contenido del footer */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #97cceb;
+
+}
+/* Estilos para el título */
+.titulo {
+  font-family: 'Roboto', sans-serif; 
+  font-size: 24px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0; /* Elimina el margen inferior */
+}
+
+.card-text {
+  line-height: 1.2; /* Ajusta el espacio entre líneas según tus preferencias */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
