@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Perfiles</title>
+    <link rel="icon" type="image/png" href="IMG/usuario.png">
+    <link rel="stylesheet" href="CSS/estilos.css"> <!-- Enlace al archivo de estilos CSS -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html"><img src="IMG/ruta_del_logo.jpg" alt="Logo URBANST"></a>
+        </div>
+        <div class="titulo">
+            <h1>URBANST</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <!-- Agrega aquí más elementos de navegación si es necesario -->
+            </ul>
+        </nav>
+    </header>
+    <div class="background">
+        <div class="profiles-container">
+    <h1>FAMILIA URBANST</h1>
+    <div class="profiles-container">
+        <div class="profile">
+            <img class="profile-img" src="IMG/cindy.jpg" alt="Perfil 1">
+            <h2>Cindy Bernandino</h2>
+            <p>Cindy es increíble programando. Ella puede hacer que las cosas funcionen en la computadora de formas asombrosas. Si necesitas ayuda con software, ella es tu persona.</p>
+            <a href="#" class="btn-more-info" onclick="mostrarModal('myModal1')">Más información</a> 
+        </div>
+
+        <div class="profile">
+            <img class="profile-img" src="IMG/monic.png" alt="Perfil 2">
+            <h2>Monica Hueso</h2>
+            <p>Monica es una artista cuando se trata de hacer cosas bonitas en la computadora, ya sea diseñando sitios web, logotipos o cualquier cosa visual. Además, es muy buena en tratar con la gente, así que es fácil trabajar con ella.</p>
+            <a href="#" class="btn-more-info" onclick="mostrarModal('myModal2')">Más información</a> 
+        </div>
+
+        <div class="profile">
+            <img class="profile-img" src="IMG/william.jpg" alt="Perfil 3">
+            <h2>William Majico</h2>
+            <p>Es genial con las computadoras, especialmente para hacer programas. Si tienes un problema tecnológico, él es el tipo al que quieres llamar.</p>
+            <a href="#" class="btn-more-info" onclick="mostrarModal('myModal3')">Más información</a> 
+        </div>
+
+        <div class="profile">
+            <img class="profile-img" src="IMG/manolo.jpg" alt="Perfil 4">
+            <h2>Manolo Aguilar</h2>
+            <p>Manolo le encanta todo lo relacionado con las computadoras. Siempre está curioseando y descubriendo nuevas cosas sobre tecnología. Es el tipo que siempre tiene una respuesta cuando tienes una pregunta sobre computadoras. </p>
+            <a href="#" class="btn-more-info" onclick="mostrarModal('myModal4')">Más información</a> 
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+</div>
+ <!-- Modal Cindy -->
+ <div class="modal" id="myModal1">
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal('myModal1')">&times;</span>
+        <div class="modal-body">
+            <div class="modal-text">
+                <h2>Cindy</h2>
+                <p>Cindy es una estudiante de tercer año de universidad en una Licenciatura en Informática.Cindy es increíble programando. Ella puede hacer que las cosas funcionen en la computadora de formas asombrosas. Si necesitas ayuda con software, ella es tu persona. Además de sus habilidades en programación, Cindy también es experta en diseño de interfaces de usuario y tiene una gran capacidad para trabajar en equipo.</p>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- Modal Monica -->
+ <div class="modal" id="myModal2">
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal('myModal2')">&times;</span>
+        <div class="modal-body">
+            <div class="modal-text">
+                <h2>Monica Hueso</h2>
+                <p>Monica es una estudiante de tercer año de universidad en una Licenciatura en Informática. Es perfecta para diseños creativos y relaciones personales. Monica es una artista cuando se trata de hacer cosas bonitas en la computadora, ya sea diseñando sitios web, logotipos o cualquier cosa visual. Además, es muy buena en tratar con la gente, así que es fácil trabajar con ella. Aparte de sus habilidades creativas, Monica también es hábil en el manejo de redes sociales y tiene un excelente sentido del diseño.</p>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- Modal William-->
+ <div class="modal" id="myModal3">
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal('myModal3')">&times;</span>
+        <div class="modal-body">
+            <div class="modal-text">
+                <h2>William Majico</h2>
+                <p> William es un estudiante de tercer año de universidad en una Licenciatura en Informática. Es genial con las computadoras, especialmente para hacer programas. Si tienes un problema tecnológico, él es el tipo al que quieres llamar. Además de ser un excelente programador, William también tiene habilidades en análisis de datos y resolución de problemas complejos.</p>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- Modal Manolo-->
+ <div class="modal" id="myModal4">
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal('myModal4')">&times;</span>
+        <div class="modal-body">
+            <div class="modal-text">
+                <h2>Manolo Aguilar</h2>
+                <p>Manolo es un estudiante de tercer año de universidad en una Licenciatura en Informática. A Manolo le encanta todo lo relacionado con las computadoras. Siempre está curioseando y descubriendo nuevas cosas sobre tecnología. Es el tipo que siempre tiene una respuesta cuando tienes una pregunta sobre computadoras. Además de su pasión por la informática, Manolo también tiene habilidades en ciberseguridad y administración de sistemas.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <!-- Enlaces -->
+    <a href="https://www.facebook.com/">Facebook</a>
+    <a href="mailto:info@example.com">Correo</a>
+    <a href="tel:+1234567890">Teléfono</a>
+    <a href="#">Soporte Técnico</a>
+    <!-- Información adicional -->
+    <p>El Salvador</p>
+    <p>&copy; Derechos Reservados 2024</p>
+    <a href="../index.html" class="btn-home">Regresar a Home</a>
+</footer>
+<script src="JS/script.js"></script>
+</body>
+</html>
