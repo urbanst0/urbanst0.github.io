@@ -1,0 +1,39 @@
+<!-- colores 
+.color-picker {
+    display: none;
+    position: absolute;
+    top: 50px; /* Ajusta según sea necesario */
+    right: 20px; /* Ajusta según sea necesario */
+}
+
+.color-input {
+    width: 50px; /* Ajusta según sea necesario */
+    height: 30px; /* Ajusta según sea necesario */
+}
+
+@media (max-width: 576px) {
+    .mb-0 {
+        text-align: center;
+    }
+
+    
+}
+
+.color-picker {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
+  .color-picker button {
+    border: none;
+    background: none;
+  }
+  
+  @media (max-width: 576px) {
+    .color-picker {
+      margin-top: 10px; /* Ajusta según sea necesario */
+    }
+  }
+  

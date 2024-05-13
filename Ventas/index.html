@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=h, initial-scale=1.0" />
+    <title>Tienda</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/img/favicon.ico"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Incluye Font Awesome para iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body style="background-color: #4eb2c4">
+    <div class="container ">
+      <div class="text-center d-flex align-items-center justify-content-center">
+          <!-- Logo -->
+          <div class="d-inline-block">
+              <a href="../index.html">
+                  <img id="catedral" src="img/logo.png" alt="Logo" class="logo" style="width: 90px; height: auto" />
+              </a>
+          </div>
+          <!-- Texto -->
+          <h1 class="mb-0 mx-3">Justo a tu destino UrbanST</h1>
+          <!-- Cambio de color -->
+          <div class="color-picker">
+              <button id="colorPickerToggle" class="btn btn-sm p-0">
+                  <img src="img/color.png" alt="Icono de cambio de color" class="img-fluid" style="max-width: 40px" />
+              </button>
+              <div id="colorPicker" style="display: none">
+                  <input type="color" id="colorInput" class="color-input" />
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+      <!-- Buscador y Botón del Carrito -->
+      <div class="container">
+        <div class="row justify-content-center align-items-center mb-3">
+          <!-- Buscador -->
+          <div class="col-md-7">
+            <form class="d-flex justify-content-center">
+              <input
+                id="searchInput"
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+              />
+              <button id="searchButton" class="btn btn-primary me-2" type="button">
+                Buscar
+              </button>
+
+              <button
+              type="button"
+              class="btn btn-info"
+              data-bs-toggle="modal"
+              data-bs-target="#carritoModal"
+            >
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+            </form>
+          </div>
+
+          <!-- Icono del Carrito 
+          <div
+            class="col-md-1 d-flex justify-content-center align-items-center"
+          >
+          <button
+              type="button"
+              class="btn btn-info"
+              data-bs-toggle="modal"
+              data-bs-target="#carritoModal"
+            >
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+            -->
+          <!-- Cambio de color 
+          <div class="col-md-2 d-flex justify-content-center">
+            <div class="color-picker mt-1">
+              <button id="colorPickerToggle" class="btn btn-sm p-0">
+                <img
+                  src="img/color.png"
+                  alt="Icono de cambio de color"
+                  class="img-fluid"
+                  style="max-width: 40px"
+                />
+              </button>
+              <div id="colorPicker" style="display: none">
+                <input type="color" id="colorInput" class="color-input" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      -->
+      <!-- Productos -->
+      <div class="row">
+        <div class="col-md-4 mt-3">
+          <!--Camisa1-->
+          <div class="card text-center">
+            <img
+              src="img/camisa/camisa1.jpeg"
+              class="card-img-top"
+              alt="camisa"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Camisa UrbanST</h5>
+              <p class="card-text">Camisa UrbanST</p>
+              <p><strong>Precio:</strong> $6</p>
+              <button
+                id="adquirirCamisa"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#compraModal"
+              >
+                Adquirir
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Camisa 2 -->
+        <div class="col-md-4 mt-3">
+          <div class="card text-center">
+            <img
+              src="img/camisaM2/camisa1.jpeg"
+              class="card-img-top"
+              alt="camisa"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Camisa UrbanST modelo 2</h5>
+              <p class="card-text">Camisa UrbanST modelo 2</p>
+              <p><strong>Precio:</strong> $6</p>
+              <button
+                id="adquirirCamisa2"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#camisaModal"
+              >
+                Adquirir
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--Gorra-->
+        <div class="col-md-4 mt-3">
+          <div class="card text-center">
+            <img src="img/gorra/img1.jpeg" class="card-img-top" alt="gorra" />
+            <div class="card-body">
+              <h5 class="card-title">Gorra UrbanST</h5>
+              <p class="card-text">Gorra UrbanST</p>
+              <p><strong>Precio:</strong> $6</p>
+              <button
+                id="adquirirGorra"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#gorraModal"
+              >
+                Adquirir
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--Gorro-->
+        <div class="col-md-4 mt-3">
+          <div class="card text-center">
+            <img src="img/gorro/img1.jpeg" class="card-img-top" alt="gorro" />
+            <div class="card-body">
+              <h5 class="card-title">Gorro UrbanST</h5>
+              <p class="card-text">Gorro UrbanST</p>
+              <p><strong>Precio:</strong> $6</p>
+              <button
+                id="adquirirGorro"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#gorroModal"
+              >
+                Adquirir
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--taza-->
+        <div class="col-md-4 mt-3">
+          <div class="card text-center">
+            <img src="img/tasa/img1.jpeg" class="card-img-top" alt="taza" />
+            <div class="card-body">
+              <h5 class="card-title">Taza UrbanST</h5>
+              <p class="card-text">Taza UrbanST</p>
+              <p><strong>Precio:</strong> $5</p>
+              <button
+                id="adquirirTaza"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#tazaModal"
+              >
+                Adquirir
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--bolso-->
+        <div class="col-md-4 mt-3">
+          <div class="card text-center">
+            <img src="img/bolso/img1.jpeg" class="card-img-top" alt="bolso" />
+            <div class="card-body">
+              <h5 class="card-title">Bolso UrbanST</h5>
+              <p class="card-text">Bolso UrbanST</p>
+              <p><strong>Precio:</strong> $5</p>
+              <button
+                id="adquirirBolso"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#bolsoModal"
+              >
+                Adquirir
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--cojin-->
+        <div class="col-md-4 mt-3">
+          <div class="card text-center">
+            <img src="img/Cojín/img1.jpeg" class="card-img-top" alt="Cojin" />
+            <div class="card-body">
+              <h5 class="card-title">Cojin UrbanST</h5>
+              <p class="card-text">Cojin UrbanST</p>
+              <p><strong>Precio:</strong> $5</p>
+              <button
+                id="adquirirCojin"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#cojinModal"
+              >
+                Adquirir
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal camisa1 -->
+      <div
+        class="modal fade"
+        id="compraModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="ModalLabel1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Detalles del Producto
+                </h5>
+              </div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="img/camisa/camisa1.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/camisa/camisa2.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/camisa/camisa3.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 3"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/camisa/camisa4.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 3"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev btn-danger"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+              <h5>Camisa UrbanST</h5>
+              <p>
+                Descripción: Camisa de UrbanST. Disponible en varias tallas.
+              </p>
+              <p><strong>Precio:</strong> $6</p>
+              <label for="cantidad">Cantidad:</label>
+              <input
+                type="number"
+                id="cantidad"
+                name="cantidad"
+                value="1"
+                min="1"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="addToCartButton"
+                data-bs-target="#carritoModal"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal camisa2 -->
+      <div
+        class="modal fade"
+        id="camisaModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="ModalLabel2"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Detalles del Producto
+                </h5>
+              </div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div
+                id="carouselC2"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="img/camisaM2/camisa1.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/camisaM2/camisa3.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/camisaM2/camisa4.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 3"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/camisaM2/camisa5.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 3"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/camisaM2/camisa6.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 3"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/camisaM2/camisa7.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 3"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev btn-danger"
+                  type="button"
+                  data-bs-target="#carouselC2"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselC2"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+              <h5>Camisa UrbanST</h5>
+              <p>
+                Descripción: Camisa de UrbanST. Disponible en varias tallas.
+              </p>
+              <p><strong>Precio:</strong> $6</p>
+              <label for="cantidad">Cantidad:</label>
+              <input
+                type="number"
+                id="cantidad1"
+                name="cantidad"
+                value="1"
+                min="1"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="addToCartButton2"
+                data-bs-target="#carritoModal"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal gorra -->
+      <div
+        class="modal fade"
+        id="gorraModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="ModalLabel3"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Detalles del Producto
+                </h5>
+              </div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div
+                id="carouselG"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="img/gorra/img1.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/gorra/img2.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/gorra/img3.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 3"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/gorra/img4.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 3"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/gorra/img5.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 3"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/gorra/img6.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 3"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/gorra/img7.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 3"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev btn-danger"
+                  type="button"
+                  data-bs-target="#carouselG"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselG"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+              <h5>Gorra UrbanST</h5>
+              <p>Descripción: Gorra de UrbanST. Disponible en varias tallas.</p>
+              <p><strong>Precio:</strong> $6</p>
+              <label for="cantidad">Cantidad:</label>
+              <input
+                type="number"
+                id="cantidad2"
+                name="cantidad"
+                value="1"
+                min="1"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="addToCartButton3"
+                data-bs-target="#carritoModal"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal gorro -->
+      <div
+        class="modal fade"
+        id="gorroModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="ModalLabel4"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Detalles del Producto
+                </h5>
+              </div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div
+                id="carouselGO"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="img/gorro/img1.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/gorro/img2.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/gorro/img3.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 3"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev btn-danger"
+                  type="button"
+                  data-bs-target="#carouselGO"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselGO"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+              <h5>Gorro UrbanST</h5>
+              <p>Descripción: Gorro de UrbanST. Disponible en varias tallas.</p>
+              <p><strong>Precio:</strong> $6</p>
+              <label for="cantidad">Cantidad:</label>
+              <input
+                type="number"
+                id="cantidad3"
+                name="cantidad"
+                value="1"
+                min="1"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="addToCartButton4"
+                data-bs-target="#carritoModal"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal taza -->
+      <div
+        class="modal fade"
+        id="tazaModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="ModalLabel5"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Detalles del Producto
+                </h5>
+              </div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div
+                id="carouselT"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="img/tasa/img1.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/tasa/img2.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/tasa/img3.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 3"
+                    />
+                  </div>
+                  <div class="carousel-item active">
+                    <img
+                      src="img/tasa/img4.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/tasa/img5.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/tasa/img6.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 3"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/tasa/img7.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 3"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev btn-danger"
+                  type="button"
+                  data-bs-target="#carouselT"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselT"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+              <h5>Taza UrbanST</h5>
+              <p>Descripción: Taza de UrbanST. Disponible en varios diseños.</p>
+              <p><strong>Precio:</strong> $5</p>
+              <label for="cantidad">Cantidad:</label>
+              <input
+                type="number"
+                id="cantidad4"
+                name="cantidad"
+                value="1"
+                min="1"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="addToCartButton5"
+                data-bs-target="#carritoModal"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal bolso -->
+      <div
+        class="modal fade"
+        id="bolsoModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="ModalLabel6"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Detalles del Producto
+                </h5>
+              </div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div
+                id="carouselB"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="img/bolso/img1.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/bolso/img2.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/bolso/img3.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 3"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev btn-danger"
+                  type="button"
+                  data-bs-target="#carouselB"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselB"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+              <h5>Bolso UrbanST</h5>
+              <p>Descripción: Bolso de UrbanST. Disponible en dos diseños.</p>
+              <p><strong>Precio:</strong> $5</p>
+              <label for="cantidad">Cantidad:</label>
+              <input
+                type="number"
+                id="cantidad5"
+                name="cantidad"
+                value="1"
+                min="1"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="addToCartButton6"
+                data-bs-target="#carritoModal"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal cojin -->
+      <div
+        class="modal fade"
+        id="cojinModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="ModalLabel7"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Detalles del Producto
+                </h5>
+              </div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div
+                id="carouselC"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="img/Cojín/img1.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/Cojín/img2.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/Cojín/img3.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 3"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/Cojín/img4.jpeg"
+                      class="d-block w-100"
+                      alt="Producto 3"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev btn-danger"
+                  type="button"
+                  data-bs-target="#carouselC"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselC"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+              <h5>Cojin UrbanST</h5>
+              <p>Descripción: Cojin de UrbanST. Disponible en dos diseños.</p>
+              <p><strong>Precio:</strong> $5</p>
+              <label for="cantidad">Cantidad:</label>
+              <input
+                type="number"
+                id="cantidad6"
+                name="cantidad"
+                value="1"
+                min="1"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="addToCartButton7"
+                data-bs-target="#carritoModal"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal para el carrito de compras -->
+      <div class="modal fade" id="carritoModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="carritoLabel">Carrito de Compras</h5>
+            </div>
+            <div class="modal-body">
+              <!-- Contenedor para mostrar la cantidad total de productos en el carrito -->
+              <div id="carritoCantidad">
+                Cantidad de productos en el carrito: 0
+              </div>
+
+              <!-- Contenedor para mostrar el contenido del carrito -->
+              <div id="carritoContenido">
+                <!-- Aquí se mostrará el contenido del carrito -->
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                id="vaciarCarritoButton"
+              >
+                Vaciar Carrito
+              </button>
+              <!-- Botón para continuar con la compra -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="continuarCompraButton"
+                data-toggle="modal"
+                data-target="#informacionCompraModal"
+              >
+                Continuar Compra
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal información de compra -->
+      <div
+        class="modal fade"
+        id="informacionCompraModal"
+        tabindex="-1"
+        role="dialog"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Información de Compra</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="nombre">Nombre:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    placeholder="Nombre"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="apellido">Apellido:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="apellido"
+                    placeholder="Apellido"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Correo Electrónico:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Correo Electrónico"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="metodoPago">Método de Pago:</label>
+                  <select class="form-control" id="metodoPago">
+                    <option value="tarjeta">Tarjeta de Crédito</option>
+                    <option value="paypal">Tarjeta de debito</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button type="button" class="btn btn-primary">
+                Realizar Compra
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Incluye jQuery y Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      <!-- Incluye tu archivo JavaScript -->
+      <script src="js/js.js"></script>
+    </div>
+  </body>
+</html>
