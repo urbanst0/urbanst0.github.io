@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruta 6</title>
+    <link rel="shortcut icon" type="image/x-icon" href="..//assets/img/favicon.ico">
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+      /* Estilos personalizados */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      nav.navbar {
+        background-color: #007bff;
+      }
+
+      nav.navbar a.navbar-brand,
+      nav.navbar button.navbar-toggler {
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.1);
+      }
+
+      section#ruta {
+        padding: 50px 0;
+      }
+
+      section#ruta h2 {
+        color: #fff;
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: 30px;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      img.img-fluid {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      iframe {
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Estilos del footer */
+      footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 0;
+        }
+
+        footer .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        footer .enlaces {
+            display: flex;
+            align-items: center;
+        }
+
+        footer .enlaces ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer .enlaces ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        footer .enlaces ul li:last-child {
+            margin-right: 0;
+        }
+
+        footer .enlaces ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer .enlaces ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer .redes-sociales {
+            margin-top: 15px;
+        }
+
+        footer .redes-sociales a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer .redes-sociales a:hover {
+            color: #ccc;
+        }
+      @media (max-width: 767px) {
+        section#ruta .col-lg-6 {
+          margin-top: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Rutas de Autobuses</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#ruta">Ruta de Autobús</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sección de presentación de la ruta de autobús -->
+    <section id="ruta">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <!-- Imagen de la ruta -->
+            <div style="position: relative">
+              <h2>Ruta 6 | Santa Ana</h2>
+              <img
+                src="https://lapagina.com.sv/wp-content/uploads/2021/04/buses-en-mal-estado-750x536.jpg"
+                class="img-fluid"
+                alt="Imagen de la ruta"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <!-- Información de la ruta -->
+            <div
+              style="
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              "
+            >
+            <h3>Información:</h3>
+            <p>
+              <strong>Tipo de bus:</strong>URBANO <br>
+              La ruta 6 inicia en Colonia Lomas de Tecana, finaliza en Colonia San Mauricio.
+            </p>
+              <p>
+                <strong>Pasa por:</strong> Colonia Natividad, Colonia Las Delicias, Cementerio Santa Isabel, Redondel Josemaría Escriva De Balaguer, Residencial San Rafael, Mercado Central, Parque Colón, Hospital San Antonio, Redondel Gerardo Barrios.
+              </p>
+              <p>
+                <strong></strong> 
+              </p>
+              <p><strong>Tarifa de viaje:</strong> $0.25</p>
+              <p>Puedes ver el recorrido del bus en el siguiente mapa online:</p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <!-- Mapa incrustado -->
+            <iframe
+              src="https://www.google.com/maps/d/embed?mid=1Fwn8Lpz5vPOlih8qAa94iBrZFMqKWd4&ehbc=2E312F"
+              width="100%"
+              height="400"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- Footer -->
+     <footer>
+        <div class="container">
+            <div class="enlaces">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="redes-sociales">
+          <a href="https://www.facebook.com/profile.php?id=61559885512354&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/urbanst0?igsh=NzAzcGVpb2ducnF5"><i class="fab fa-instagram"></i></a>
+          <a href="http://tiktok.com/@urbanst0"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <!-- Agrega más scripts JS si es necesario -->
+  </body>
+</html>
